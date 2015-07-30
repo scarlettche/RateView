@@ -14,6 +14,10 @@
 		FB258EF61B69BDF500A75594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB258EF51B69BDF500A75594 /* Images.xcassets */; };
 		FB258EF91B69BDF500A75594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB258EF71B69BDF500A75594 /* LaunchScreen.xib */; };
 		FB258F051B69BDF600A75594 /* RateViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB258F041B69BDF600A75594 /* RateViewTests.m */; };
+		FB258F101B69BE0B00A75594 /* TCRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB258F0F1B69BE0B00A75594 /* TCRateView.m */; };
+		FB258F121B69CF6A00A75594 /* logo_feedback@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB258F111B69CF6A00A75594 /* logo_feedback@3x.png */; };
+		FB258F151B69D31300A75594 /* course_complete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB258F131B69D31300A75594 /* course_complete@3x.png */; };
+		FB258F161B69D31300A75594 /* course_no_complete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB258F141B69D31300A75594 /* course_no_complete@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,11 @@
 		FB258EFE1B69BDF600A75594 /* RateViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RateViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB258F031B69BDF600A75594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB258F041B69BDF600A75594 /* RateViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RateViewTests.m; sourceTree = "<group>"; };
+		FB258F0E1B69BE0B00A75594 /* TCRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCRateView.h; sourceTree = "<group>"; };
+		FB258F0F1B69BE0B00A75594 /* TCRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCRateView.m; sourceTree = "<group>"; };
+		FB258F111B69CF6A00A75594 /* logo_feedback@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo_feedback@3x.png"; sourceTree = "<group>"; };
+		FB258F131B69D31300A75594 /* course_complete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course_complete@3x.png"; sourceTree = "<group>"; };
+		FB258F141B69D31300A75594 /* course_no_complete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "course_no_complete@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +94,11 @@
 				FB258EED1B69BDF500A75594 /* AppDelegate.m */,
 				FB258EEF1B69BDF500A75594 /* ViewController.h */,
 				FB258EF01B69BDF500A75594 /* ViewController.m */,
+				FB258F0E1B69BE0B00A75594 /* TCRateView.h */,
+				FB258F0F1B69BE0B00A75594 /* TCRateView.m */,
 				FB258EF21B69BDF500A75594 /* Main.storyboard */,
 				FB258EF51B69BDF500A75594 /* Images.xcassets */,
+				FB258F111B69CF6A00A75594 /* logo_feedback@3x.png */,
 				FB258EF71B69BDF500A75594 /* LaunchScreen.xib */,
 				FB258EE81B69BDF500A75594 /* Supporting Files */,
 			);
@@ -96,6 +108,8 @@
 		FB258EE81B69BDF500A75594 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FB258F131B69D31300A75594 /* course_complete@3x.png */,
+				FB258F141B69D31300A75594 /* course_no_complete@3x.png */,
 				FB258EE91B69BDF500A75594 /* Info.plist */,
 				FB258EEA1B69BDF500A75594 /* main.m */,
 			);
@@ -199,9 +213,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB258F151B69D31300A75594 /* course_complete@3x.png in Resources */,
 				FB258EF41B69BDF500A75594 /* Main.storyboard in Resources */,
 				FB258EF91B69BDF500A75594 /* LaunchScreen.xib in Resources */,
 				FB258EF61B69BDF500A75594 /* Images.xcassets in Resources */,
+				FB258F161B69D31300A75594 /* course_no_complete@3x.png in Resources */,
+				FB258F121B69CF6A00A75594 /* logo_feedback@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB258EF11B69BDF500A75594 /* ViewController.m in Sources */,
+				FB258F101B69BE0B00A75594 /* TCRateView.m in Sources */,
 				FB258EEE1B69BDF500A75594 /* AppDelegate.m in Sources */,
 				FB258EEB1B69BDF500A75594 /* main.m in Sources */,
 			);

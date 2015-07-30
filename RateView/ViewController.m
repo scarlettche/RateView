@@ -7,21 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "TCRateView.h"
 
-@interface ViewController ()
-
+@interface ViewController () <TCRateViewDelegate>
+@property (nonatomic, strong) TCRateView *viewd;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+    TCRateView *viewd = [TCRateView showRateView];
+    viewd.delegate = self;
+    viewd.alpha = 0.1;
+    [self.view addSubview:viewd];
+    self.viewd = viewd;
+    [UIView animateWithDuration:0.5 animations:^{
+        self.viewd.alpha = 1;
+    }];
+}
+
+- (void)rateView:(TCRateView *)rateView rate:(NSInteger)rate {
+    NSLog(@"=========>%ld",(long)rate);
 }
 
 @end
